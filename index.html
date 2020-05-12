@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="./assets/css/index.css" />
+
+<title>Zeichenkettentrennungsmaschine</title>
+</head>
+
+        <h2>Zeichenkettentrennungsmaschine</h2>
+        <form action="javascript:work()">
+            
+            <label for="zk-input">Zu trennenden Zeichenkette </label>
+            <input type="text" id="zk-input" name="zk-input">
+    
+            <label for="ZK-Trennungsposition">Wähle die Zeichen für die Trennungsposition </label>
+            <input type="text" id="zk-tp" name="zk-tp">
+    
+           
+            <input type="radio" id="davor" name="trennposition" checked="checked">
+            <label for="davor"> davor trennen</label> 
+            <input type="radio" id="danach" name="trennposition" >
+            <label for="danach"> danach trennen</label>
+    
+           <button type="text" value="Trennen" id="button_trennen" onclick="trennen()">Trennen</button>
+    
+           <button type="text" value="clear" id="button_clear" onclick="löschen()">Clear</button>
+        </form>
+    
+            <h3>Ausgabe</h3>
+            <div class="vorne">
+                <p>Vorderer Teil</p>
+                <p id="vorne"></p>
+            </div>
+            <div class="hinten">
+                <p>Hinterer Teil</p>
+                <p id="hinten"></p>
+            </div>
+          
+    
+    
+    
+         </form> 
+    
+    
+      
+<script src="./assets/js/index.js"></script>
+</body>
+</html>
