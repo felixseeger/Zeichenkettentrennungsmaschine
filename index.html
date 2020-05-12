@@ -8,44 +8,45 @@
 
 <title>Zeichenkettentrennungsmaschine</title>
 </head>
-
+<section>
+    <form action="javascript:work()">
         <h2>Zeichenkettentrennungsmaschine</h2>
-        <form action="javascript:work()">
             
-            <label for="zk-input">Zu trennenden Zeichenkette </label>
+            <label for="zk-input"><b>Zu trennenden Zeichenkette </b></label>
             <input type="text" id="zk-input" name="zk-input">
-    
-            <label for="ZK-Trennungsposition">Wähle die Zeichen für die Trennungsposition </label>
+    <br>
+            <label for="ZK-Trennungsposition"><b>Wähle die Zeichen für die Trennungsposition </b></label>
+            <br>
             <input type="text" id="zk-tp" name="zk-tp">
-    
-           
+            <br>
+            <br>
             <input type="radio" id="davor" name="trennposition" checked="checked">
             <label for="davor"> davor trennen</label> 
             <input type="radio" id="danach" name="trennposition" >
             <label for="danach"> danach trennen</label>
-    
+    <br>
            <button type="text" value="Trennen" id="button_trennen" onclick="trennen()">Trennen</button>
-    
            <button type="text" value="clear" id="button_clear" onclick="löschen()">Clear</button>
+           <br><br>
+           <h3>Ausgabe</h3>
+           <div class="vorne">
+               <p><b>Vorderer Teil</b></p>
+               <p id="vorne"></p>
+           </div>
+           <div class="hinten">
+               <p><b>Hinterer Teil<b></p>
+               <p id="hinten"></p>
+           </div>
         </form>
     
-            <h3>Ausgabe</h3>
-            <div class="vorne">
-                <p>Vorderer Teil</p>
-                <p id="vorne"></p>
-            </div>
-            <div class="hinten">
-                <p>Hinterer Teil</p>
-                <p id="hinten"></p>
-            </div>
           
     
     
     
-         </form> 
-    
-    
       
+    
+    
+        </section>
 <script src="./assets/js/index.js"></script>
 </body>
 </html>
